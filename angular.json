@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "angular-temp"
+    }
+  },
+  "defaultProject": "angular-temp",
+  "cli": {
+    "analytics": "b281562d-dad8-4d28-bbec-b6d07d50768a"
+  }
 }

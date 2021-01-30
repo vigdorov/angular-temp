@@ -1,0 +1,12 @@
+<h1>Main page</h1>
+<app-menu></app-menu>
+
+<div>
+  <div>Выбранный пункт меню:</div>
+  <div>{{selectedItem$ | async}}</div>
+</div>
+
+<div>
+  <div>Юзверы</div>
+  <div *ngFor="let email of userList">{{email}}</div>
+</div>
