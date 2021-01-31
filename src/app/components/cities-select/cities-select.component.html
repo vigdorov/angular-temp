@@ -1,0 +1,5 @@
+<div formGroupName="cityGroup">
+  <select formControlName="city">
+    <option *ngFor="let city of options" [value]="city">{{city}}</option>
+  </select>
+</div>

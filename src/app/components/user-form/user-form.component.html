@@ -1,0 +1,37 @@
+<form [formGroup]="personForm" (ngSubmit)="handleSubmit($event)">
+  <label>
+    First Name:
+    <input type="text" formControlName="name">
+  </label>
+
+  <label>
+    Surname:
+    <input type="text" formControlName="surname">
+  </label>
+
+  <label>
+    Age:
+    <input type="text" formControlName="age">
+  </label>
+
+  <label>
+    City:
+    <app-cities-select></app-cities-select>
+  </label>
+
+  <div formArrayName="settings">
+    <label>
+      Colors:
+      <select multiple formControlName="colors">
+        <option
+          *ngFor="let color of colorOptions"
+          [value]="color"
+        >
+          {{color}}
+        </option>
+      </select>
+    </label>
+  </div>
+
+  <button type="submit">Send</button>
+</form>
